@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="javascript.js"></script>
+    <title>Musicfav</title>
+</head>
+<body>
+    <!-- <div class = "usernamereq">
+        <img  id = "profileimg" src="https://picsum.photos/seed/picsum/800/500">
+        <form action="submission.html" method="GET">
+            <label for="username">Username:</label>
+            <br>
+                <input id="username" name="username" type="text" required minlength="3" maxlength="15">
+            <input type="submit" value="Submit">
+        </form> -->
+    <!-- </div> -->
+    <div class = "header">
+        <div class = dropdown> 
+            <button class = "dropdownbt">Playist</button>
+            <div class = "musiclinks">
+                <a href = "">Favorites</a>
+                <a href = "">Workout</a>
+                <a href = "">Study Music</a>
+                <a href = "">Zen Mode</a>
+                
+            </div>
+        </div>
+        <h1 style="color: darkcyan; background-color: lightskyblue; box-shadow: 0px 1px 1px 0px lightblue; ">MusicFav</h1>
+        <div class = "searchwrapper">   
+            <input  class = "searchbar" type="text" name="Search" placeholder = "SearchPeace" id="searchs">
+        </div>
+        <div class = "username1">
+            <button id = "profile"> Username</button>
+        </div>
+        
+    </div>
+    <div class = "albumcovers">
+        <div class = "imagecoveralbums">
+            <div class = imgco>
+                <audio id="myAudio" src="dkj - Aces.mp3" preload="auto">
+                </audio>
+                <button onclick = "albumcover()" class = "switchalbum"><img  id = "firstcover"  src="https://picsum.photos/300/300?grayscale" alt="firstcover"></button>
+                <button onclick = "albumcover()" class = "switchalbum"><img  id = "secondcover" src="https://picsum.photos/300/300?grayscale" alt="secondcover"></button>
+                <button onclick = "albumcover()" class = "switchalbum"><img  id = "thirdcover"  src="https://picsum.photos/300/300?grayscale" alt="thirdcover"></button>
+                <button onclick = "albumcover()" class = "switchalbum"><img  id = "fourthcover" src="https://picsum.photos/300/300?grayscale" alt="fourthcover"></button>
+            </div>
+        </div>
+    </div>
+    <div class = "playheader">
+        <div class = "headerplay">
+            <div class = "imagesplace">
+                <button id = "songbtn"  onclick = "songplaying()" class = "button1"><img class = "images" src="https://picsum.photos/300/300?grayscale" alt="songplaying"></button>
+                <button  id = "backbtn" onclick = "previous()" class = "button2"><img class = "images"  src="106117.png" alt = "previous"></button>
+                <button  id = "audio" onclick = "playpause()" class = "button3"><img class = "images" src="Play_Pause_icon_2283501.svg.png" alt="pause"></button>
+                <button id  = "nextbtn" onclick = "skipbut()" class = "button4"><img class = "images" src="skipbutton.png" alt = "skip"></button>
+            </div>
+
+
+
+            <!-- This section is my player slider timer -->
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+                value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>           
+            </div>
+    </div>
+
+            
+            
+            
+    </div>
+</body>
+
+
+</html>
